@@ -43,10 +43,18 @@ var flipCard = function (cardId) {
 	checkForMatch();
 };
 
-flipCard(0);
-flipCard(1);
+
+var createBoard = function () {
+	for (var i = 0; i < createBoard.length; i++) {
+    var cardElement = document.createElement('img');
+    cardElement.setAttribute('src', '"images/back.png"');
+    document.cardElement.setAttribute('data-id', i);
+}
+};
+
+document.querySelector('.game-board').appendChild(cardElement);
+document.querySelectorAll('game-board').addEventListener('click', flipCard);
 
 
-
-
+createBoard();
 
